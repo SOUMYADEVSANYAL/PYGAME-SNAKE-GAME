@@ -10,3 +10,9 @@ pygame.display.set_caption("My First Game")
 exit_game = False
 game_over = False
 
+# Creating a game loop
+while not exit_game:
+    pass
+
+pygame.quit()
+quit()
