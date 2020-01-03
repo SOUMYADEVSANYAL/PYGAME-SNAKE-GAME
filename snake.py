@@ -22,6 +22,8 @@ exit_game = False
 game_over = False
 snake_x = 45
 snake_y = 55
+velocity_x = 4
+velocity_y = 4
 snake_size = 10
 fps = 30
 
@@ -44,6 +46,9 @@ while not exit_game:
 
             if event.key == pygame.K_DOWN:
                 snake_y = snake_y + 10
+
+    snake_x = snake_x + velocity_x
+    snake_y = snake_y + velocity_y
 
     gameWindow.fill(white)
     pygame.draw.rect(gameWindow, black, [snake_x, snake_y, snake_size, snake_size])
